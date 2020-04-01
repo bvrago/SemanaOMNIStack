@@ -1,26 +1,30 @@
+//import React, {useState} from 'react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+//import Header from './Header';
+//import Logon from './pages/Logon/';
+import Routes from './routes';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello!!!!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+/*  const [counter, setCounter] = useState(0);
+  function increment(){
+    setCounter(counter +1);
+  }
 
+  return (
+    <div>
+      <Header>COCO : {counter}</Header> 
+      <button onClick={increment}> Incrementar </button>
+    </div>
+ 
+        //<h1>Hello!!!!</h1>
+  );
+  */
+  return (
+    <Routes />
+  )
+
+}
 export default App;
